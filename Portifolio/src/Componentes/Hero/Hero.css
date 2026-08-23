@@ -1,0 +1,138 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+    background: var(--fundo);
+}
+
+/* ====== TEXTO ====== */
+
+.hero-texto {
+    max-width: 620px;
+}
+
+.h1-hero {
+    color: var(--TextoPrincipal);
+    font-family: var(--FonteTextoPrincipal);
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.destaque {
+    color: var(--LaranjaPrincipal);
+}
+
+.p-hero {
+    margin-top: 25px;
+
+    color: var(--TextoSecundario);
+    font-family: var(--FonteTextoPrincipal);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* ====== BOTÕES ====== */
+
+.hero-botoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.botao-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+
+    color: var(--TextoSecundario);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-icone:hover {
+    border-color: var(--LaranjaPrincipal);
+    color: var(--LaranjaPrincipal);
+}
+
+.botao-curriculo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 25px;
+    border-radius: 8px;
+    background: var(--LaranjaPrincipal);
+
+    color: var(--TextoPrincipal);
+    font-family: var(--FonteTextoPrincipal);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-curriculo:hover {
+    background: #7c3aed;
+}
+
+/* ====== IMAGEM ====== */
+
+.hero-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px;
+    border-radius: 50%;
+    background: var(--fundo);
+    box-shadow: 0 0 0 2px var(--LaranjaPrincipal), 0 0 60px 10px rgba(139, 92, 246, 0.35);
+}
+
+.hero-imagem img {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.hero-imagem img:hover {
+    transform: scale(1.08);
+}
+
+/* ====== RESPONSIVO ====== */
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding: 40px 25px 70px;
+        text-align: center;
+    }
+
+    .h1-hero {
+        font-size: 2.2rem;
+    }
+
+    .hero-botoes {
+        justify-content: center;
+    }
+
+    .hero-imagem img {
+        width: 240px;
+        height: 240px;
+    }
+}
