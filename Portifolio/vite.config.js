@@ -9,6 +9,13 @@ export default defineConfig(({ command }) => ({
   // então os arquivos precisam desse caminho. No npm run dev continua "/".
   base: command === 'build' ? '/Meu-Portifolio/' : '/',
 
+  build: {
+    // O site pronto vai para a pasta docs/ na raiz do repositório,
+    // que é a pasta que o GitHub Pages publica (Branch: main / docs).
+    outDir: '../docs',
+    emptyOutDir: true,
+  },
+
   server: {
     // No Windows o Vite às vezes não percebe que um arquivo mudou
     // e o navegador fica com a versão antiga. Isso força ele a conferir.
