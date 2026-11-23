@@ -5,10 +5,11 @@
 import Navbar from "../Componentes/Navbar/Navbar";
  import Hero from "../Componentes/Hero/Hero";
  import Skill from "../Componentes/Skills/Skill";
- /*import Sobre from "../Componentes/Sobre/Sobre";
 import ProjetoCard from "../Componentes/ProjetoCard/ProjetoCard";
+import Certificacoes from "../Componentes/Certificacoes/Certificacoes";
 import Contatos from "../Componentes/Contatos/Contatos";
-import Footer from "../Componentes/Footer/Footer"; */
+import Footer from "../Componentes/Footer/Footer";
+ /*import Sobre from "../Componentes/Sobre/Sobre"; */
 
 
 
@@ -18,10 +19,11 @@ function Home() {
         <Navbar />
         <Hero />
         <Skill />
-  {/*       <Sobre />  
         <ProjetoCard />
-        <Contatos/>
-        <Footer />  */}
+        <Certificacoes />
+        <Contatos />
+        <Footer />
+  {/*       <Sobre />  */}
         </>
     )
 }

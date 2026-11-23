@@ -53,7 +53,7 @@
 
     width: 45px;
     height: 45px;
-    border: 1px solid #3a3a3a;
+    border: 1px solid var(--borda);
     border-radius: 8px;
 
     color: var(--TextoSecundario);
@@ -76,7 +76,7 @@
     border-radius: 8px;
     background: var(--LaranjaPrincipal);
 
-    color: var(--TextoPrincipal);
+    color: #ffffff;
     font-family: var(--FonteTextoPrincipal);
     font-size: 0.9rem;
     font-weight: bold;

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
+/* ====== TEMA ESCURO (padrão) ===== */
 :root {
     /* ====== CORES =====*/
     --fundo: #0d0d0d;
@@ -9,8 +10,27 @@
     --TextoSecundario: #a8a8a8;
     --LaranjaPrincipal: #8b5cf6;
 
+    --borda: #2a2a2a;        /* bordas de cards, inputs e botões */
+    --card-inicio: #151515;  /* degradê dos cards */
+    --card-fim: #0f0f0f;
+    --superficie: #1a1a1a;   /* fundo de itens dentro dos cards e inputs */
+    --texto-apagado: #6a6a6a;
+
      /* ====== FONTES =====*/
     --FonteTextoPrincipal: "Montserrat", sans-serif;
     --FonteTexto:  "Playfair Display", sans-serif;
 }
 
+/* ====== TEMA CLARO ===== */
+:root[data-tema="claro"] {
+    --fundo: #f5f5f7;
+    --TextoPrincipal: #111111;
+    --TextoSecundario: #555555;
+    --LaranjaPrincipal: #7c3aed;
+
+    --borda: #e0e0e6;
+    --card-inicio: #ffffff;
+    --card-fim: #fafafa;
+    --superficie: #f0f0f4;
+    --texto-apagado: #8a8a8a;
+}
