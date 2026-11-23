@@ -39,7 +39,7 @@ function Hero() {
                         <FaWhatsapp />
                     </a>
 
-                    <a className="botao-curriculo" href="/Curriculo.pdf" download>
+                    <a className="botao-curriculo" href={`${import.meta.env.BASE_URL}Curriculo.pdf`} download>
                         <FiDownload />
                         {t.hero.curriculo}
                     </a>
